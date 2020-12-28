@@ -1,0 +1,80 @@
+.ch {
+  width: 900px;
+  height: 300px;
+  margin: 0px auto;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  line-height: 40px;
+}
+#cfront:checked ~ .lifang {
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+#cback:checked ~ .lifang {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+#cleft:checked ~ .lifang {
+  transform: rotate3d(0, 1, 0, 90deg);
+}
+#cright:checked ~ .lifang {
+  transform: rotate3d(0, 1, 0, -90deg);
+}
+#ctop:checked ~ .lifang {
+  transform: rotate3d(1, 0, 0, -90deg);
+}
+#cbuttom:checked ~ .lifang {
+  transform: rotate3d(1, 0, 0, 90deg);
+}
+#cbig:checked ~ .lifang {
+  transform: scale(2);
+}
+#csmall:checked ~ .lifang {
+  transform: scale(0.5);
+}
+#ctop:checked ~ .ch [for="ctop"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cbuttom:checked ~ .ch [for="cbuttom"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cleft:checked ~ .ch [for="cleft"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cright:checked ~ .ch [for="cright"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cfront:checked ~ .ch [for="cfront"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cback:checked ~ .ch [for="cback"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#cbig:checked ~ .ch [for="cbig"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
+#csmall:checked ~ .ch [for="csmall"] {
+  background: #ccc;
+  color: #fff;
+  box-shadow: 0 0 20px #e00909;
+}
